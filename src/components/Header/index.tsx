@@ -1,14 +1,14 @@
 import { HeaderContainer } from './styles'
-import { HeaderLeftEffect } from './components/HeaderLeftEffect'
-import { Logo } from './components/Logo'
-import { HeaderRightEffect } from './components/HeaderRightEffect'
+import { HeaderLeftEffectIcon } from '../../assets/svg-components/HeaderLeftEffectIcon'
+import { LogoIcon } from '../../assets/svg-components/LogoIcon'
+import { HeaderRightEffectIcon } from '../../assets/svg-components/HeaderRightEffectIcon'
 
 export function Header() {
   return (
     <HeaderContainer>
-      <HeaderLeftEffect />
-      <Logo />
-      <HeaderRightEffect />
+      <HeaderLeftEffectIcon />
+      <LogoIcon />
+      <HeaderRightEffectIcon />
     </HeaderContainer>
   )
 }

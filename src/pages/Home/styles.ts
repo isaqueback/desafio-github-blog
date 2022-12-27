@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const HomeContainer = styled.div`
   position: absolute;
   width: 54rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 14.625rem;
 `
 
 export const ProfileContainer = styled.section`
@@ -44,6 +48,7 @@ export const ProfileContainer = styled.section`
       gap: 0.52375rem;
       text-decoration: none;
       padding-bottom: 14px;
+      transition: border-bottom 0.6s;
 
       &:hover {
         border-bottom: 1px solid ${(props) => props.theme['blue-300']};
@@ -102,6 +107,86 @@ export const ProfileContainer = styled.section`
   }
 `
 
-export const SearchContainer = styled.div``
+export const SearchContainer = styled.div`
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
 
-export const PostsContainer = styled.article``
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    font-size: var(--title-s);
+    color: ${(props) => props.theme['gray-200']};
+
+    span {
+      color: ${(props) => props.theme['gray-400']};
+      font-size: var(--text-s);
+    }
+  }
+
+  input {
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    border: 1px solid ${(props) => props.theme['gray-600']};
+    background-color: ${(props) => props.theme['gray-1000']};
+    font-size: var(--text-m);
+    color: ${(props) => props.theme['gray-300']};
+    outline: none;
+
+    &::placeholder {
+      color: ${(props) => props.theme['gray-500']};
+    }
+
+    &:focus {
+      border: 1px solid ${(props) => props.theme['blue-300']};
+    }
+  }
+`
+
+export const PostsContainer = styled.article`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  a {
+    background-color: ${props => props.theme['gray-700']};
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    
+    &:hover {
+      border: 2px solid ${props => props.theme['gray-500']}
+    }
+
+    section {
+      padding: 2rem;
+      transition: border 0.2s;
+  
+      div {
+        display: flex;
+        justify-content: space-between;
+  
+        h2 {
+          color: ${props => props.theme['gray-100']};
+          width: 17.52rem;
+          line-height: 32px;
+          font-size: var(--title-m)
+        }
+  
+        span {
+          font-size: var(--text-s);
+          color: ${props => props.theme['gray-400']};
+          padding-top: 7px;
+          letter-spacing: -1px;
+        }
+      }
+  
+      p {
+        color: ${props => props.theme['gray-300']};
+        margin-top: 1.25rem;
+      }
+    }
+  }
+`

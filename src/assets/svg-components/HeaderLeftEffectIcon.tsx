@@ -1,372 +1,360 @@
-export function HeaderLeftEffect() {
+export function HeaderLeftEffectIcon() {
   return (
     <svg
-      width="371"
-      height="236"
-      viewBox="0 0 371 236"
+      width="409"
+      height="188"
+      viewBox="0 0 409 188"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect
-        width="61"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 183 167)"
-        fill="#1562AF"
-        fillOpacity="0.14"
-      />
-      <rect
-        width="94"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 283 167)"
-        fill="#1562AF"
-        fillOpacity="0.34"
-      />
-      <rect
-        width="82"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 371 167)"
-        fill="#1562AF"
-        fillOpacity="0.14"
-      />
-      <rect
-        width="68"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 116 167)"
-        fill="#1562AF"
-        fillOpacity="0.34"
-      />
-      <rect
-        width="42"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 42 178)"
-        fill="#1562AF"
-        fillOpacity="0.34"
-      />
-      <rect
-        width="32"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 80 178)"
-        fill="#1562AF"
-        fillOpacity="0.14"
-      />
-      <rect
-        width="122"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 208 178)"
-        fill="#1562AF"
-        fillOpacity="0.14"
-      />
-      <rect
-        width="93"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 307 178)"
-        fill="#1562AF"
-        fillOpacity="0.14"
-      />
-      <rect
-        width="58"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 371 178)"
-        fill="#1562AF"
-        fillOpacity="0.34"
-      />
-      <rect
-        width="118"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 371 0)"
-        fill="#1562AF"
-        fillOpacity="0.14"
-      />
-      <rect
-        width="128"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 371 189)"
-        fill="#1562AF"
-        fillOpacity="0.14"
-      />
-      <rect
-        width="112"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 247 0)"
-        fill="#1562AF"
-        fillOpacity="0.34"
-      />
-      <rect
-        width="121"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 190 189)"
-        fill="#1562AF"
-        fillOpacity="0.14"
-      />
-      <rect
-        x="91"
-        width="38"
+        x="212"
+        y="55"
+        width="69"
         height="3"
         rx="1.5"
         fill="#1562AF"
         fillOpacity="0.14"
       />
       <rect
-        x="196"
-        y="189"
-        width="41"
+        x="99"
+        y="55"
+        width="106"
         height="3"
         rx="1.5"
         fill="#1562AF"
-        fillOpacity="0.34"
+        fillOpacity="0.14"
       />
       <rect
+        y="55"
         width="92"
         height="3"
         rx="1.5"
-        transform="matrix(-1 0 0 1 271 11)"
         fill="#1562AF"
         fillOpacity="0.14"
       />
       <rect
-        width="99"
+        x="287"
+        y="55"
+        width="77"
         height="3"
         rx="1.5"
-        transform="matrix(-1 0 0 1 263 200)"
-        fill="#1562AF"
-        fillOpacity="0.14"
-      />
-      <rect
-        width="94"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 371 11)"
         fill="#1562AF"
         fillOpacity="0.34"
       />
       <rect
-        width="102"
+        x="328"
+        y="66"
+        width="36"
         height="3"
         rx="1.5"
-        transform="matrix(-1 0 0 1 371 200)"
+        fill="#1562AF"
+        fillOpacity="0.14"
+      />
+      <rect
+        x="184"
+        y="66"
+        width="137"
+        height="3"
+        rx="1.5"
+        fill="#1562AF"
+        fillOpacity="0.14"
+      />
+      <rect
+        x="72"
+        y="66"
+        width="105"
+        height="3"
+        rx="1.5"
         fill="#1562AF"
         fillOpacity="0.34"
       />
       <rect
-        width="23"
+        y="66"
+        width="65"
         height="3"
         rx="1.5"
-        transform="matrix(-1 0 0 1 145 11)"
+        fill="#1562AF"
+        fillOpacity="0.14"
+      />
+      <rect width="144" height="3" rx="1.5" fill="#1562AF" fillOpacity="0.14" />
+      <rect
+        x="151"
+        width="136"
+        height="3"
+        rx="1.5"
         fill="#1562AF"
         fillOpacity="0.34"
       />
       <rect
-        width="23"
+        width="46"
         height="3"
         rx="1.5"
-        transform="matrix(-1 0 0 1 174 11)"
+        transform="matrix(-1 0 0 1 340 0)"
         fill="#1562AF"
         fillOpacity="0.14"
       />
       <rect
-        width="62"
+        x="122"
+        y="11"
+        width="111"
         height="3"
         rx="1.5"
-        transform="matrix(-1 0 0 1 158 200)"
+        fill="#1562AF"
+        fillOpacity="0.14"
+      />
+      <rect
+        x="122"
+        y="152"
+        width="111"
+        height="3"
+        rx="1.5"
+        fill="#1562AF"
+        fillOpacity="0.14"
+      />
+      <rect
+        y="11"
+        width="115"
+        height="3"
+        rx="1.5"
         fill="#1562AF"
         fillOpacity="0.34"
       />
       <rect
-        width="68"
+        y="152"
+        width="115"
         height="3"
         rx="1.5"
-        transform="matrix(-1 0 0 1 116 11)"
-        fill="#1562AF"
-        fillOpacity="0.14"
-      />
-      <rect
-        width="79"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 119 54)"
-        fill="#1562AF"
-        fillOpacity="0.14"
-      />
-      <rect
-        width="79"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 119 211)"
         fill="#1562AF"
         fillOpacity="0.34"
       />
       <rect
-        width="127"
+        x="275"
+        y="11"
+        width="28"
         height="3"
         rx="1.5"
-        transform="matrix(-1 0 0 1 252 54)"
-        fill="#1562AF"
-        fillOpacity="0.14"
-      />
-      <rect
-        width="127"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 252 211)"
-        fill="#1562AF"
-        fillOpacity="0.14"
-      />
-      <rect
-        width="29"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 287 54)"
         fill="#1562AF"
         fillOpacity="0.34"
       />
       <rect
-        width="29"
+        x="240"
+        y="11"
+        width="28"
         height="3"
         rx="1.5"
-        transform="matrix(-1 0 0 1 287 211)"
+        fill="#1562AF"
+        fillOpacity="0.14"
+      />
+      <rect
+        x="240"
+        y="152"
+        width="37"
+        height="3"
+        rx="1.5"
+        fill="#1562AF"
+        fillOpacity="0.14"
+      />
+      <rect
+        x="310"
+        y="11"
+        width="83"
+        height="3"
+        rx="1.5"
+        fill="#1562AF"
+        fillOpacity="0.14"
+      />
+      <rect
+        x="284"
+        y="22"
+        width="89"
+        height="3"
+        rx="1.5"
+        fill="#1562AF"
+        fillOpacity="0.14"
+      />
+      <rect
+        x="284"
+        y="163"
+        width="19"
+        height="3"
+        rx="1.5"
+        fill="#1562AF"
+        fillOpacity="0.14"
+      />
+      <rect
+        x="134"
+        y="22"
+        width="143"
+        height="3"
+        rx="1.5"
         fill="#1562AF"
         fillOpacity="0.34"
       />
       <rect
-        width="78"
+        x="134"
+        y="163"
+        width="143"
         height="3"
         rx="1.5"
-        transform="matrix(-1 0 0 1 371 54)"
-        fill="#1562AF"
-        fillOpacity="0.14"
-      />
-      <rect
-        width="78"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 371 211)"
-        fill="#1562AF"
-        fillOpacity="0.14"
-      />
-      <rect
-        width="53"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 61 65)"
         fill="#1562AF"
         fillOpacity="0.34"
       />
       <rect
-        width="53"
+        x="95"
+        y="22"
+        width="32"
         height="3"
         rx="1.5"
-        transform="matrix(-1 0 0 1 61 222)"
         fill="#1562AF"
         fillOpacity="0.14"
       />
       <rect
-        width="126"
+        x="95"
+        y="163"
+        width="32"
         height="3"
         rx="1.5"
-        transform="matrix(-1 0 0 1 193 65)"
         fill="#1562AF"
         fillOpacity="0.14"
       />
       <rect
-        width="126"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 193 222)"
-        fill="#1562AF"
-        fillOpacity="0.14"
-      />
-      <rect
-        width="27"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 226 65)"
-        fill="#1562AF"
-        fillOpacity="0.34"
-      />
-      <rect
-        width="45"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 277 65)"
-        fill="#1562AF"
-        fillOpacity="0.14"
-      />
-      <rect
-        width="78"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 277 222)"
-        fill="#1562AF"
-        fillOpacity="0.34"
-      />
-      <rect
-        width="60"
-        height="3"
-        rx="1.5"
-        transform="matrix(-1 0 0 1 343 65)"
-        fill="#1562AF"
-        fillOpacity="0.14"
-      />
-      <rect
+        y="22"
         width="88"
         height="3"
         rx="1.5"
-        transform="matrix(-1 0 0 1 371 222)"
         fill="#1562AF"
         fillOpacity="0.14"
       />
       <rect
-        width="22"
+        y="163"
+        width="88"
         height="3"
         rx="1.5"
-        transform="matrix(-1 0 0 1 371 65)"
         fill="#1562AF"
         fillOpacity="0.14"
       />
       <rect
-        width="64"
+        x="349"
+        y="33"
+        width="60"
         height="3"
         rx="1.5"
-        transform="matrix(-1 0 0 1 371 76)"
         fill="#1562AF"
         fillOpacity="0.34"
       />
       <rect
-        width="64"
+        x="201"
+        y="33"
+        width="142"
         height="3"
         rx="1.5"
-        transform="matrix(-1 0 0 1 371 233)"
+        fill="#1562AF"
+        fillOpacity="0.14"
+      />
+      <rect
+        x="201"
+        y="174"
+        width="51"
+        height="3"
+        rx="1.5"
+        fill="#1562AF"
+        fillOpacity="0.14"
+      />
+      <rect
+        x="259"
+        y="174"
+        width="62"
+        height="3"
+        rx="1.5"
         fill="#1562AF"
         fillOpacity="0.34"
       />
       <rect
-        width="86"
+        x="163"
+        y="33"
+        width="31"
         height="3"
         rx="1.5"
-        transform="matrix(-1 0 0 1 301 76)"
         fill="#1562AF"
         fillOpacity="0.14"
       />
       <rect
-        width="154"
+        x="106"
+        y="33"
+        width="51"
         height="3"
         rx="1.5"
-        transform="matrix(-1 0 0 1 301 233)"
         fill="#1562AF"
         fillOpacity="0.14"
+      />
+      <rect
+        x="106"
+        y="174"
+        width="88"
+        height="3"
+        rx="1.5"
+        fill="#1562AF"
+        fillOpacity="0.14"
+      />
+      <rect
+        x="32"
+        y="33"
+        width="67"
+        height="3"
+        rx="1.5"
+        fill="#1562AF"
+        fillOpacity="0.34"
+      />
+      <rect
+        y="174"
+        width="99"
+        height="3"
+        rx="1.5"
+        fill="#1562AF"
+        fillOpacity="0.34"
+      />
+      <rect
+        y="33"
+        width="25"
+        height="3"
+        rx="1.5"
+        fill="#1562AF"
+        fillOpacity="0.14"
+      />
+      <rect
+        y="44"
+        width="72"
+        height="3"
+        rx="1.5"
+        fill="#1562AF"
+        fillOpacity="0.34"
+      />
+      <rect
+        y="185"
+        width="72"
+        height="3"
+        rx="1.5"
+        fill="#1562AF"
+        fillOpacity="0.14"
+      />
+      <rect
+        x="79"
+        y="44"
+        width="97"
+        height="3"
+        rx="1.5"
+        fill="#1562AF"
+        fillOpacity="0.14"
+      />
+      <rect
+        x="79"
+        y="185"
+        width="55"
+        height="3"
+        rx="1.5"
+        fill="#1562AF"
+        fillOpacity="0.34"
       />
     </svg>
   )
