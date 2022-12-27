@@ -1,8 +1,8 @@
-import { ThemeProvider } from "styled-components";
-import { Router } from "./Router";
-import { Header } from "./components/Header";
-import { GlobalStyle } from "./styles/global";
-import { defaultTheme } from "./styles/themes/default";
+import { ThemeProvider } from 'styled-components'
+import { Router } from './Router'
+import { Header } from './components/Header'
+import { GlobalStyle } from './styles/global'
+import { defaultTheme } from './styles/themes/default'
 
 export function App() {
   return (
