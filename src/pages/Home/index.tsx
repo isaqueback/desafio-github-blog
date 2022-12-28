@@ -57,7 +57,7 @@ export function Home() {
       </SearchContainer>
 
       <PostsContainer>
-        <a href="" target={"_blank"}>
+        <a href="" target={'_blank'}>
           <section>
             <div>
               <h2>JavaScript data types and data structures</h2>
@@ -65,13 +65,13 @@ export function Home() {
             </div>
             <p>
               Programming languages all have built-in data structures, but these
-              often differ from one language to another. This article attempts to
-              list the built-in data structures available in...
+              often differ from one language to another. This article attempts
+              to list the built-in data structures available in...
             </p>
           </section>
         </a>
 
-        <a href="" target={"_blank"}>
+        <a href="" target={'_blank'}>
           <section>
             <div>
               <h2>JavaScript data types and data structures</h2>
@@ -79,8 +79,8 @@ export function Home() {
             </div>
             <p>
               Programming languages all have built-in data structures, but these
-              often differ from one language to another. This article attempts to
-              list the built-in data structures available in...
+              often differ from one language to another. This article attempts
+              to list the built-in data structures available in...
             </p>
           </section>
         </a>
@@ -93,8 +93,8 @@ export function Home() {
             </div>
             <p>
               Programming languages all have built-in data structures, but these
-              often differ from one language to another. This article attempts to
-              list the built-in data structures available in...
+              often differ from one language to another. This article attempts
+              to list the built-in data structures available in...
             </p>
           </section>
         </a>
@@ -107,8 +107,8 @@ export function Home() {
             </div>
             <p>
               Programming languages all have built-in data structures, but these
-              often differ from one language to another. This article attempts to
-              list the built-in data structures available in...
+              often differ from one language to another. This article attempts
+              to list the built-in data structures available in...
             </p>
           </section>
         </a>

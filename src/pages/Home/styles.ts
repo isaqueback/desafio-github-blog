@@ -59,6 +59,7 @@ export const ProfileContainer = styled.section`
         font-size: var(--link);
         color: ${(props) => props.theme['blue-300']};
         line-height: 12.7px;
+        font-weight: 700;
       }
 
       svg {
@@ -151,40 +152,40 @@ export const PostsContainer = styled.article`
   gap: 2rem;
 
   a {
-    background-color: ${props => props.theme['gray-700']};
+    background-color: ${(props) => props.theme['gray-700']};
     text-decoration: none;
     border: 2px solid transparent;
     border-radius: 10px;
-    
+
     &:hover {
-      border: 2px solid ${props => props.theme['gray-500']}
+      border: 2px solid ${(props) => props.theme['gray-500']};
     }
 
     section {
       padding: 2rem;
       transition: border 0.2s;
-  
+
       div {
         display: flex;
         justify-content: space-between;
-  
+
         h2 {
-          color: ${props => props.theme['gray-100']};
+          color: ${(props) => props.theme['gray-100']};
           width: 17.52rem;
           line-height: 32px;
-          font-size: var(--title-m)
+          font-size: var(--title-m);
         }
-  
+
         span {
           font-size: var(--text-s);
-          color: ${props => props.theme['gray-400']};
+          color: ${(props) => props.theme['gray-400']};
           padding-top: 7px;
           letter-spacing: -1px;
         }
       }
-  
+
       p {
-        color: ${props => props.theme['gray-300']};
+        color: ${(props) => props.theme['gray-300']};
         margin-top: 1.25rem;
       }
     }
