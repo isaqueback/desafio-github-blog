@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 export const PostContainer = styled.div`
-  background-color: ${(props) => props.theme['gray-800']};
-  border-radius: 10px;
   width: 54rem;
 `
 
 export const PostTitleContainer = styled.div`
+  border-radius: 10px;
+  background-color: ${(props) => props.theme['gray-800']};
   padding: 2rem;
   width: 100%;
   height: 10.5rem;
@@ -14,7 +14,6 @@ export const PostTitleContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   box-shadow: 0px 2px 20px 0px rgb(0, 0, 0, 0.2);
-  z-index: 1;
 
   #post-title-container-toolbar {
     display: flex;
@@ -79,4 +78,14 @@ export const PostTitleContainer = styled.div`
 
 export const PostDescriptionContainer = styled.div`
   padding: 2.5rem 2rem;
+  color: ${(props) => props.theme['gray-300']};
+
+  h2 {
+    color: ${(props) => props.theme['blue-300']};
+    font-size: var(--text-m);
+    font-weight: 400;
+    border-bottom: 1px solid ${(props) => props.theme['blue-300']};
+    display: inline-block;
+    margin-bottom: 0.25rem;
+  }
 `
