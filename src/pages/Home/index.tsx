@@ -31,6 +31,11 @@ export function Home() {
           explicabo labore sed, voluptatum suscipit consectetur cumque possimus
           ullam provident placeat officia in facere, eaque nemo. Velit neque
           deserunt corporis accusantium!
+
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
+          explicabo labore sed, voluptatum suscipit consectetur cumque possimus
+          ullam provident placeat officia in facere, eaque nemo. Velit neque
+          deserunt corporis accusantium!
         </p>
         <ul>
           <li>
@@ -59,38 +64,36 @@ export function Home() {
       <PostsContainer>
         <a href="" target={'_blank'}>
           <section>
-            <div>
               <h2>JavaScript data types and data structures</h2>
               <span>Há 1 dia</span>
-            </div>
             <p>
               Programming languages all have built-in data structures, but these
-              often differ from one language to another. This article attempts
-              to list the built-in data structures available in...
+              often differ from one language to another.
             </p>
           </section>
         </a>
 
         <a href="" target={'_blank'}>
           <section>
-            <div>
               <h2>JavaScript data types and data structures</h2>
               <span>Há 11 meses</span>
-            </div>
             <p>
               Programming languages all have built-in data structures, but these
-              often differ from one language to another. This article attempts
-              to list the built-in data structures available in...
+              often differ from one language to another.
+              Programming languages all have built-in data structures, but these
+              often differ from one language to another.
+              Programming languages all have built-in data structures, but these
+              often differ from one language to another.
+              Programming languages all have built-in data structures, but these
+              often differ from one language to another.
             </p>
           </section>
         </a>
 
         <a href="" target="_blank">
           <section>
-            <div>
               <h2>JavaScript data types and data structures</h2>
               <span>Há 1 semana</span>
-            </div>
             <p>
               Programming languages all have built-in data structures, but these
               often differ from one language to another. This article attempts
@@ -101,10 +104,8 @@ export function Home() {
 
         <a href="" target="_blank">
           <section>
-            <div>
               <h2>JavaScript data types and data structures</h2>
               <span>Há 1 ano</span>
-            </div>
             <p>
               Programming languages all have built-in data structures, but these
               often differ from one language to another. This article attempts

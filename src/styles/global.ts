@@ -24,9 +24,15 @@ export const GlobalStyle = createGlobalStyle`
 
     }
 
-    body, input, button, textarea {
+    html, body, input, button, textarea {
         font-family: 'Nunito', sans-serif;
-        font-size: 1rem;
+        font-size: 16px;
         font-weight: 400;
+    }
+
+    @media (max-width: 670px) {
+        html {
+            font-size: 20px;
+        }
     }
 `

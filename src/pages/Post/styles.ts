@@ -14,6 +14,7 @@ export const PostTitleContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   box-shadow: 0px 2px 20px 0px rgb(0, 0, 0, 0.2);
+  row-gap: 1.25rem;
 
   #post-title-container-toolbar {
     display: flex;
@@ -53,8 +54,6 @@ export const PostTitleContainer = styled.div`
   h1 {
     color: ${(props) => props.theme['gray-100']};
     font-size: var(--title-l);
-    margin-top: 1.25rem;
-    margin-bottom: 0.5rem;
   }
 
   #post-title-container-footer {
