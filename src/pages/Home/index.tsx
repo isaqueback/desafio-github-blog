@@ -30,12 +30,10 @@ export function Home() {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
           explicabo labore sed, voluptatum suscipit consectetur cumque possimus
           ullam provident placeat officia in facere, eaque nemo. Velit neque
-          deserunt corporis accusantium!
-
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
-          explicabo labore sed, voluptatum suscipit consectetur cumque possimus
-          ullam provident placeat officia in facere, eaque nemo. Velit neque
-          deserunt corporis accusantium!
+          deserunt corporis accusantium! Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Fugit explicabo labore sed, voluptatum suscipit
+          consectetur cumque possimus ullam provident placeat officia in facere,
+          eaque nemo. Velit neque deserunt corporis accusantium!
         </p>
         <ul>
           <li>
@@ -64,8 +62,8 @@ export function Home() {
       <PostsContainer>
         <a href="" target={'_blank'}>
           <section>
-              <h2>JavaScript data types and data structures</h2>
-              <span>Há 1 dia</span>
+            <h2>JavaScript data types and data structures</h2>
+            <span>Há 1 dia</span>
             <p>
               Programming languages all have built-in data structures, but these
               often differ from one language to another.
@@ -75,15 +73,14 @@ export function Home() {
 
         <a href="" target={'_blank'}>
           <section>
-              <h2>JavaScript data types and data structures</h2>
-              <span>Há 11 meses</span>
+            <h2>JavaScript data types and data structures</h2>
+            <span>Há 11 meses</span>
             <p>
               Programming languages all have built-in data structures, but these
-              often differ from one language to another.
-              Programming languages all have built-in data structures, but these
-              often differ from one language to another.
-              Programming languages all have built-in data structures, but these
-              often differ from one language to another.
+              often differ from one language to another. Programming languages
+              all have built-in data structures, but these often differ from one
+              language to another. Programming languages all have built-in data
+              structures, but these often differ from one language to another.
               Programming languages all have built-in data structures, but these
               often differ from one language to another.
             </p>
@@ -92,8 +89,8 @@ export function Home() {
 
         <a href="" target="_blank">
           <section>
-              <h2>JavaScript data types and data structures</h2>
-              <span>Há 1 semana</span>
+            <h2>JavaScript data types and data structures</h2>
+            <span>Há 1 semana</span>
             <p>
               Programming languages all have built-in data structures, but these
               often differ from one language to another. This article attempts
@@ -104,8 +101,8 @@ export function Home() {
 
         <a href="" target="_blank">
           <section>
-              <h2>JavaScript data types and data structures</h2>
-              <span>Há 1 ano</span>
+            <h2>JavaScript data types and data structures</h2>
+            <span>Há 1 ano</span>
             <p>
               Programming languages all have built-in data structures, but these
               often differ from one language to another. This article attempts

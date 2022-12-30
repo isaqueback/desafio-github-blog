@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { smartphone, notebook } from '../../styles/themes/default'
 
 export const PostContainer = styled.div`
   max-width: 54rem;
@@ -76,13 +77,12 @@ export const PostTitleContainer = styled.div`
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (${notebook}) {
     padding: 1rem;
     min-width: 100%;
-
   }
 
-  @media (max-width: 670px) {
+  @media (${smartphone}) {
     #post-title-container-footer {
       flex-direction: column;
       gap: 0.75rem;
@@ -103,7 +103,7 @@ export const PostDescriptionContainer = styled.div`
     margin-bottom: 0.25rem;
   }
 
-  @media (max-width: 1024px) {
+  @media (${notebook}) {
     padding: 2.5rem 1rem 10rem;
   }
 `

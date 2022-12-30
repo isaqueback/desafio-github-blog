@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { smartphone, notebook } from '../../styles/themes/default'
 
 export const HomeContainer = styled.div`
   position: absolute;
@@ -7,17 +8,15 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   gap: 3rem;
   padding-bottom: 15rem;
-  
-  @media(max-width: 1024px) {
+
+  @media (${notebook}) {
     width: 100%;
     padding-bottom: 5rem;
   }
 
-  @media(max-width: 670px) {
-    width: 100%;
+  @media (${smartphone}) {
     padding-bottom: 22rem;
   }
-  
 `
 
 export const ProfileContainer = styled.section`
@@ -110,7 +109,7 @@ export const ProfileContainer = styled.section`
     }
   }
 
-  @media(max-width: 670px) {
+  @media (${smartphone}) {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     padding: 1rem;
@@ -131,11 +130,11 @@ export const ProfileContainer = styled.section`
       margin-left: 0;
       text-align: center;
     }
-    
+
     div {
       display: none;
     }
-    
+
     p {
       grid-column: 1 / 2;
       grid-row: 3 / 4;
@@ -144,7 +143,7 @@ export const ProfileContainer = styled.section`
       align-items: center;
       display: -webkit-box;
     }
-    
+
     ul {
       grid-column: 1 / 2;
       grid-row: 4 / 5;
@@ -157,15 +156,15 @@ export const ProfileContainer = styled.section`
         gap: 0.5rem;
       }
 
-      li:nth-child(2), li:last-child {
+      li:nth-child(2),
+      li:last-child {
         margin-left: 0;
         margin-top: 0.75rem;
       }
     }
-
   }
-  
-  @media (max-width: 1024px) {
+
+  @media (${notebook}) {
     width: 100%;
   }
 `
@@ -236,18 +235,18 @@ export const PostsContainer = styled.article`
       grid-template-rows: auto 1fr;
       row-gap: 1.25rem;
 
-        h2 {
-          color: ${(props) => props.theme['gray-100']};
-          line-height: 28px;
-          font-size: var(--title-m);
-        }
+      h2 {
+        color: ${(props) => props.theme['gray-100']};
+        line-height: 28px;
+        font-size: var(--title-m);
+      }
 
-        span {
-          font-size: var(--text-s);
-          color: ${(props) => props.theme['gray-400']};
-          padding-top: 7px;
-          letter-spacing: -1px;
-        }
+      span {
+        font-size: var(--text-s);
+        color: ${(props) => props.theme['gray-400']};
+        padding-top: 7px;
+        letter-spacing: -1px;
+      }
 
       p {
         display: -webkit-box;
@@ -260,7 +259,7 @@ export const PostsContainer = styled.article`
     }
   }
 
-  @media (max-width: 670px) {
+  @media (${smartphone}) {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr 1rem;
     padding: 0 0.25rem;
@@ -271,16 +270,16 @@ export const PostsContainer = styled.article`
         grid-template-rows: auto auto 1fr;
         row-gap: 0.5rem;
         padding: 1rem;
-  
+
         h2 {
           grid-row: 1 / 2;
         }
-  
+
         span {
           grid-row: 2 / 3;
           padding-top: 0;
         }
-  
+
         p {
           grid-row: 3 / 4;
           padding-top: 0.75rem;
@@ -289,7 +288,7 @@ export const PostsContainer = styled.article`
     }
   }
 
-  @media(max-width: 1024px) {
+  @media (${notebook}) {
     a {
       section {
         grid-template-columns: auto;
@@ -301,7 +300,7 @@ export const PostsContainer = styled.article`
         }
 
         p {
-          margin-top: 1.1rem
+          margin-top: 1.1rem;
         }
       }
     }

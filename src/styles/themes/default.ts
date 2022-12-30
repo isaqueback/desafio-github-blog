@@ -11,3 +11,15 @@ export const defaultTheme = {
   'gray-900': '#071422',
   'gray-1000': '#040F1A',
 }
+
+export const devicesSize = {
+  smartphone: '670px',
+  notebook: '1024px',
+}
+
+const devices = {
+  smartphone: `max-width: ${devicesSize.smartphone}`,
+  notebook: `max-width: ${devicesSize.notebook}`,
+}
+
+export const { smartphone, notebook } = devices
