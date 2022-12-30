@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const PostContainer = styled.div`
-  width: 54rem;
+  max-width: 54rem;
+  width: 100%;
 `
 
 export const PostTitleContainer = styled.div`
@@ -9,12 +10,12 @@ export const PostTitleContainer = styled.div`
   background-color: ${(props) => props.theme['gray-800']};
   padding: 2rem;
   width: 100%;
-  height: 10.5rem;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   box-shadow: 0px 2px 20px 0px rgb(0, 0, 0, 0.2);
-  row-gap: 1.25rem;
+  row-gap: 0.5rem;
 
   #post-title-container-toolbar {
     display: flex;
@@ -59,6 +60,7 @@ export const PostTitleContainer = styled.div`
   #post-title-container-footer {
     display: flex;
     gap: 2rem;
+    margin-top: 0.5rem;
 
     div {
       display: flex;
@@ -73,10 +75,23 @@ export const PostTitleContainer = styled.div`
       }
     }
   }
+
+  @media (max-width: 1024px) {
+    padding: 1rem;
+    min-width: 100%;
+
+  }
+
+  @media (max-width: 670px) {
+    #post-title-container-footer {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  }
 `
 
 export const PostDescriptionContainer = styled.div`
-  padding: 2.5rem 2rem;
+  padding: 2.5rem 2rem 10rem;
   color: ${(props) => props.theme['gray-300']};
 
   h2 {
@@ -86,5 +101,9 @@ export const PostDescriptionContainer = styled.div`
     border-bottom: 1px solid ${(props) => props.theme['blue-300']};
     display: inline-block;
     margin-bottom: 0.25rem;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 2.5rem 1rem 10rem;
   }
 `

@@ -6,7 +6,7 @@ export const DefaultLayoutContainer = styled.main`
   justify-content: center;
   height: 100%;
 
-  @media(max-width: 670px) {
+  @media(max-width: 1024px) {
     margin: 2rem 0 0;
     padding-bottom: 1rem;
   }

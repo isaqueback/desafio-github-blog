@@ -31,7 +31,7 @@ export function Post() {
           </a>
         </div>
 
-        <h1>JavaScript data types and data structures</h1>
+        <h1>JavaScript data types and data structures JavaScript data types and data structures JavaScript data types and data structures </h1>
 
         <div id="post-title-container-footer">
           <div>
