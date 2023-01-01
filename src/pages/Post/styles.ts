@@ -94,14 +94,52 @@ export const PostDescriptionContainer = styled.div`
   padding: 2.5rem 2rem 10rem;
   color: ${(props) => props.theme['gray-300']};
 
-  h2 {
-    color: ${(props) => props.theme['blue-300']};
-    font-size: var(--text-m);
-    font-weight: 400;
-    border-bottom: 1px solid ${(props) => props.theme['blue-300']};
-    display: inline-block;
-    margin-bottom: 0.25rem;
+  p {
+    margin: 1rem 0;
   }
+
+  h1 ~ p, h2 ~ p, h3 ~ p, h4 ~ p {
+    margin-top: 0.75rem;
+  }
+
+  a {
+    color: ${props => props.theme['blue-300']};
+  }
+  
+  h1, h2 {
+    border-bottom: 1px solid ${(props) => props.theme['gray-600']};
+    padding-bottom: 0.2rem;
+  }
+
+  h1, h2, h3, h4 {
+    margin-top: 2.5rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  ul {
+    li:not(:first-child) {
+      margin-top: 3rem;
+    }
+  }
+
+  ol {
+    li {
+      margin-top: 1.5rem !important;
+    }
+
+  }
+  
+  code {
+    background-color: rgba(17,33,49, 0.5);
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    line-height: 2rem;
+    white-space: break-spaces;
+  }
+
 
   @media (${notebook}) {
     padding: 2.5rem 1rem 10rem;

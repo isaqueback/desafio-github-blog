@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { notebook, smartphone } from '../../styles/themes/default'
 
 export const HeaderContainer = styled.header`
   height: 18.5rem;
@@ -25,11 +26,24 @@ export const HeaderContainer = styled.header`
     max-width: 100%;
   }
 
-  @media (max-width: 670px) {
+  
+  @media (${notebook}) {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @media (${smartphone}) {
     height: 10rem;
 
-    svg:nth-child(2) {
-      align-self: center;
+    a {
+      width: 30rem;
+
+      svg:nth-child(2) {
+        align-self: center;
+      }
     }
 
     svg:first-child,
@@ -37,4 +51,5 @@ export const HeaderContainer = styled.header`
       margin-top: 0;
     }
   }
+
 `

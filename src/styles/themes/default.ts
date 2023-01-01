@@ -14,7 +14,7 @@ export const defaultTheme = {
 
 export const devicesSize = {
   smartphone: '670px',
-  notebook: '1024px',
+  notebook: '1220px',
 }
 
 const devices = {

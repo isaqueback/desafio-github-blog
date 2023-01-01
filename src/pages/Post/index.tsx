@@ -1,17 +1,52 @@
-import { Link, useParams } from 'react-router-dom'
-import {
-  PostContainer,
-  PostDescriptionContainer,
-  PostTitleContainer,
-} from './styles'
+import { GithubContext } from '../../contexts/GithubContext'
+import { useContext } from 'react'
+import { useEffect, useState } from "react"
+import { useNavigate, useParams } from "react-router"
+import { PostContainer, PostDescriptionContainer, PostTitleContainer } from "./styles"
+import { Link } from "react-router-dom"
 import { LeftAngleIcon } from '../../assets/svg-components/LeftAngleIcon'
 import { GithubLinkIcon } from '../../assets/svg-components/GithubLinkIcon'
 import { GithubIcon } from '../../assets/svg-components/GithubIcon'
 import { CalendarDayIcon } from '../../assets/svg-components/CalendarDayIcon'
 import { CommentIcon } from '../../assets/svg-components/CommentIcon'
+import { dateFormatter } from '../../utils/formatter'
+import ReactMarkdown from 'react-markdown'
+
+interface Issue {
+  title: string
+  body: string
+  issueUrl: string
+  comments: number
+  createdAt: string
+  userLogin: string
+}
 
 export function Post() {
+  const { issues, user } = useContext(GithubContext)
+  const [issue, setIssue] = useState({} as Issue)
   const { postId } = useParams()
+  const navigate = useNavigate()
+  let postIndex: number
+
+  useEffect(() => {
+    if (issues.totalCount) {
+      postIndex = issues.items.findIndex(item => item.id === Number(postId))
+
+      if (postIndex !== -1) {
+        setIssue({
+          title: issues.items[postIndex].title,
+          body: issues.items[postIndex].body,
+          issueUrl: issues.items[postIndex].htmlUrl,
+          comments: issues.items[postIndex].comments,
+          createdAt: issues.items[postIndex].createdAt,
+          userLogin: issues.items[postIndex].title,
+        })
+      } else {
+        navigate('/')
+      }
+    }
+
+  }, [issues])
 
   return (
     <PostContainer>
@@ -22,58 +57,44 @@ export function Post() {
             <span>voltar</span>
           </Link>
           <a
-            href="https://github.com/isaqueback"
+            href={issue.issueUrl}
             target="_blank"
-            rel="noreferrer"
           >
             <span>ver no github</span>
             <GithubLinkIcon />
           </a>
         </div>
 
-        <h1>
-          JavaScript data types and data structures JavaScript data types and
-          data structures JavaScript data types and data structures{' '}
-        </h1>
+        <h1>{issue.title}</h1>
 
         <div id="post-title-container-footer">
           <div>
             <GithubIcon />
-            <span>isaqueback</span>
+            <span>{user.login}</span>
           </div>
 
           <div>
             <CalendarDayIcon />
-            <span>Há 1 dia</span>
+            <span>{issue.createdAt && dateFormatter(issue.createdAt)}</span>
           </div>
 
           <div>
             <CommentIcon />
-            <span>5 comentários</span>
+            <span>
+              {
+                issue.comments > 1 ? `${issue.comments} comentários` : `${issue.comments} comentário`
+              }
+            </span>
           </div>
         </div>
       </PostTitleContainer>
 
       <PostDescriptionContainer>
-        <p>
-          <b>
-            Programming languages all have built-in data structures, but these
-            often differ from one language to another.
-          </b>
-          This article attempts to list the built-in data structures available
-          in JavaScript and what properties they have. These can be used to
-          build other data structures. Wherever possible, comparisons with other
-          languages are drawn.
-        </p>
-        <br />
-        <h2>Dynamic typing</h2>
-        <p>
-          JavaScript is a loosely typed and dynamic language. Variables in
-          JavaScript are not directly associated with any particular value type,
-          and any variable can be assigned (and re-assigned) values of all
-          types:
-        </p>
+        <ReactMarkdown children={issue.body} />
       </PostDescriptionContainer>
     </PostContainer>
   )
+
 }
+
+
