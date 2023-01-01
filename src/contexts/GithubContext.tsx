@@ -74,7 +74,7 @@ export function GithubProvider({ children }: GithubProviderProps) {
 
   async function fetchIssues(query = '') {
     const response = await api.get(
-      `search/issues?q=${query} repo:isaqueback/desafio-github-blog`,
+      `search/issues?q=${query} repo:isaqueback/github-blog`,
     )
     const data = response.data
 
