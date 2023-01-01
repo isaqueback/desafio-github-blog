@@ -12,6 +12,7 @@ export const FooterContainer = styled.footer`
   a {
     text-decoration: none;
     transition: color 0.2s;
+    color: ${(props) => props.theme['gray-300']};
 
     &:visited {
       color: ${(props) => props.theme['gray-300']};
