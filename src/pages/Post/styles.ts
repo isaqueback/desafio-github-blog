@@ -98,20 +98,27 @@ export const PostDescriptionContainer = styled.div`
     margin: 1rem 0;
   }
 
-  h1 ~ p, h2 ~ p, h3 ~ p, h4 ~ p {
+  h1 ~ p,
+  h2 ~ p,
+  h3 ~ p,
+  h4 ~ p {
     margin-top: 0.75rem;
   }
 
   a {
-    color: ${props => props.theme['blue-300']};
+    color: ${(props) => props.theme['blue-300']};
   }
-  
-  h1, h2 {
+
+  h1,
+  h2 {
     border-bottom: 1px solid ${(props) => props.theme['gray-600']};
     padding-bottom: 0.2rem;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     margin-top: 2.5rem;
   }
 
@@ -129,17 +136,15 @@ export const PostDescriptionContainer = styled.div`
     li {
       margin-top: 1.5rem !important;
     }
-
   }
-  
+
   code {
-    background-color: rgba(17,33,49, 0.5);
+    background-color: rgba(17, 33, 49, 0.5);
     border-radius: 4px;
     padding: 0.25rem 0.5rem;
     line-height: 2rem;
     white-space: break-spaces;
   }
-
 
   @media (${notebook}) {
     padding: 2.5rem 1rem 10rem;

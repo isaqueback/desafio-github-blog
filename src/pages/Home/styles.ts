@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { smartphone, notebook } from '../../styles/themes/default'
+import { notebook } from '../../styles/themes/default'
 
 export const HomeContainer = styled.div`
   width: 54rem;

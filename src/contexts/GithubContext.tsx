@@ -15,8 +15,8 @@ interface IssueItems {
   title: string
   body: string
   id: number
-  createdAt: string,
-  htmlUrl: string,
+  createdAt: string
+  htmlUrl: string
   comments: number
 }
 
@@ -80,7 +80,14 @@ export function GithubProvider({ children }: GithubProviderProps) {
 
     const dataItems = data.items.reduce(
       (acc: DataItemsType[], cur: DataItemsCurrencyValue) => {
-        const { id, title, body, created_at: createdAt, html_url: htmlUrl, comments } = cur
+        const {
+          id,
+          title,
+          body,
+          created_at: createdAt,
+          html_url: htmlUrl,
+          comments,
+        } = cur
 
         const item = {
           id,
@@ -88,7 +95,7 @@ export function GithubProvider({ children }: GithubProviderProps) {
           body,
           createdAt,
           htmlUrl,
-          comments
+          comments,
         }
         acc = [...acc, item]
         return acc

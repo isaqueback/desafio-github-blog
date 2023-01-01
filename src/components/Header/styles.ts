@@ -26,7 +26,6 @@ export const HeaderContainer = styled.header`
     max-width: 100%;
   }
 
-  
   @media (${notebook}) {
     a {
       display: flex;
@@ -51,5 +50,4 @@ export const HeaderContainer = styled.header`
       margin-top: 0;
     }
   }
-
 `

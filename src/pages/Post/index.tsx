@@ -1,9 +1,12 @@
 import { GithubContext } from '../../contexts/GithubContext'
-import { useContext } from 'react'
-import { useEffect, useState } from "react"
-import { useNavigate, useParams } from "react-router"
-import { PostContainer, PostDescriptionContainer, PostTitleContainer } from "./styles"
-import { Link } from "react-router-dom"
+import { useContext, useEffect, useState } from 'react'
+import { useNavigate, useParams } from 'react-router'
+import {
+  PostContainer,
+  PostDescriptionContainer,
+  PostTitleContainer,
+} from './styles'
+import { Link } from 'react-router-dom'
 import { LeftAngleIcon } from '../../assets/svg-components/LeftAngleIcon'
 import { GithubLinkIcon } from '../../assets/svg-components/GithubLinkIcon'
 import { GithubIcon } from '../../assets/svg-components/GithubIcon'
@@ -26,11 +29,12 @@ export function Post() {
   const [issue, setIssue] = useState({} as Issue)
   const { postId } = useParams()
   const navigate = useNavigate()
-  let postIndex: number
 
   useEffect(() => {
     if (issues.totalCount) {
-      postIndex = issues.items.findIndex(item => item.id === Number(postId))
+      const postIndex = issues.items.findIndex(
+        (item) => item.id === Number(postId),
+      )
 
       if (postIndex !== -1) {
         setIssue({
@@ -45,8 +49,7 @@ export function Post() {
         navigate('/')
       }
     }
-
-  }, [issues])
+  }, [issues, navigate, postId])
 
   return (
     <PostContainer>
@@ -56,10 +59,7 @@ export function Post() {
             <LeftAngleIcon />
             <span>voltar</span>
           </Link>
-          <a
-            href={issue.issueUrl}
-            target="_blank"
-          >
+          <a href={issue.issueUrl} target="_blank" rel="noreferrer">
             <span>ver no github</span>
             <GithubLinkIcon />
           </a>
@@ -81,20 +81,17 @@ export function Post() {
           <div>
             <CommentIcon />
             <span>
-              {
-                issue.comments > 1 ? `${issue.comments} comentários` : `${issue.comments} comentário`
-              }
+              {issue.comments > 1
+                ? `${issue.comments} comentários`
+                : `${issue.comments} comentário`}
             </span>
           </div>
         </div>
       </PostTitleContainer>
 
       <PostDescriptionContainer>
-        <ReactMarkdown children={issue.body} />
+        <ReactMarkdown>{issue.body}</ReactMarkdown>
       </PostDescriptionContainer>
     </PostContainer>
   )
-
 }
-
-
