@@ -12,3 +12,5 @@ O objetivo do projeto é praticar:
 - A criação de componentes e sua organização em estruturação;
 - O uso de styled-components;
 - O uso de Typescript.
+
+Projeto deployed: https://github-blog-isaqueback.netlify.app/
