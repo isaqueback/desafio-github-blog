@@ -1,5 +1,5 @@
 # desafio-github-blog
-Este projeto constitui um desafio da Rocketseat que consiste em fazer uma aplicação React, com typescript, que se utiliza da API do GitHub para buscar issues de um repositório e dados de perfil e mostrar em tela em forma de blog.
+Este projeto utiliza a API do GitHub para buscar issues de um repositório e dados de perfil e mostrar em tela em forma de blog.
 
 Para fazer a aplicação, foi utilizado um protótipo feito pela Rocketseat:  https://www.figma.com/community/file/1138814951106121051
 
