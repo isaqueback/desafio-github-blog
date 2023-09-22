@@ -20,13 +20,9 @@ interface IssueItems {
   comments: number
 }
 
-interface DataItemsCurrencyValue {
-  id: number
-  title: string
-  body: string
+type DataItemsCurrentValue = Omit<IssueItems, 'createdAt' | 'htmlUrl'> & {
   created_at: string
   html_url: string
-  comments: number
 }
 
 export interface Issues {
@@ -76,10 +72,10 @@ export function GithubProvider({ children }: GithubProviderProps) {
     const response = await api.get(
       `search/issues?q=${query} repo:isaqueback/github-blog`,
     )
-    const data = response.data
+    const { data } = response
 
     const dataItems = data.items.reduce(
-      (acc: DataItemsType[], cur: DataItemsCurrencyValue) => {
+      (acc: DataItemsType[], cur: DataItemsCurrentValue) => {
         const {
           id,
           title,
